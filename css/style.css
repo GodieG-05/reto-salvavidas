@@ -1,0 +1,86 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    display: grid;
+    grid-template: 0.1fr 1fr / 0.2fr 1fr;
+    grid-template-areas: "nav header"
+        "nav main";
+}
+section{
+    display: grid;
+    column-gap:5%;
+    row-gap: 15%;
+    grid-template: 200px 150px / repeat(auto-fit, minmax(150px, 1fr));
+    padding-top: 2%;
+
+}
+main{
+    grid-area: main;
+}
+nav{
+    grid-area: nav;
+}
+.bxs-dashboard{
+    background-color: blue; color: white; padding: 3%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.dash{
+    padding: 17% 10%
+}
+.main{
+    padding-top: 5%;
+    color: gray
+}
+.ele{
+    display: none;
+}
+.elements:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+.a1:hover{
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+}
+.grid-item{
+    border: inset 1px;
+    padding: 0% 5%;
+    border-radius: 10px;
+    background-color: white;
+}
+.report{
+    grid-area: 2/1/2/5;
+    padding:1.8% 1%;
+}
+.dato{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    border: inset 1px;
+    border-radius: 10px;
+    background-color: white;
+    align-items: center;
+    padding: 0.5% 1%;
+    grid-area: header;
+}
+p{
+    line-height: 0.5;
+}
+.bx-trending-up{
+    color: green
+}
+.bx-trending-down{
+    color: red
+}
+body{
+    background-color: rgb(237, 239, 250);
+}
+.bx-menu{
+    font-size: 1.5rem;
+}
